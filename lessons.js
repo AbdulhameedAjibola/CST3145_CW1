@@ -36,3 +36,21 @@ let lessons = [
         "description": "Cone join us, in a fun filled learning environment and improve your volleyball skills!",
         "availability": 10
     },
+    {
+        "id": 1005,
+        "image": "images/Biology.jpg",
+        "subject": "BIO 332",
+        "price": 0,
+        "location": "Biology Lab",
+        "description": "This course is for students who wish to improve their biology understanding!!. Stand out anongst your peers!",
+        "availability": 10
+    },
+    {
+        "id": 1006,
+        "image": "images/technology.jpg",
+        "subject": "CST 3145",
+        "price": 450.00,
+        "location": "Computer Science Building (CSB) Room 370",
+        "description": "Come to expand your knowledge on Vue.js",
+        "availability": 10
+    },
