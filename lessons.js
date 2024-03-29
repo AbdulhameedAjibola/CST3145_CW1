@@ -54,3 +54,12 @@ let lessons = [
         "description": "Come to expand your knowledge on Vue.js",
         "availability": 10
     },
+    {
+        "id": 1007,
+        "image": "images/FST.jpg",
+        "subject": "FST 221",
+        "price": 36.00,
+        "location": "Home Economics Lab",
+        "description": "This session is for people with little to no cooking skills to learn basic cooking eitquettes",
+        "availability": 10
+    },
