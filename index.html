@@ -127,6 +127,44 @@
                 <input type="number" name="" id="" v-model="customerNumber"> <br>
                 <span class="message" v-if="!isValidNumber()">Please enter your complete Phone Number (Digits Only)</span>
             </div>
+            <button  v-if="showCheckoutButton()" v-on:click="checkOut" class="place-order">Buy Now!</button>
+            <button disabled v-else class="place-order">Buy Now!</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let app = new Vue({
+        el: '#app',
+        data:{
+            header: "Hameed's Extra lesson's Site",
+            checkout: "Checkout Page",
+            lessons: lessons,
+            showLessons: true,
+            cart: [],
+            sortedLessons: [...lessons],
+            sortBy: '',
+            ascending: false,
+            descending: false,
+            searchTerm: '',
+                customerName: '',
+                customerNumber: ''
+            },
+            methods: {
+                canAddToCart(lesson){
+                    return lesson.availability > this.cartCount(lesson.id);
+                },
+                cartCount(id){
+                    let count = 0;
+                    for (let i=0; i<this.cart.length; i++){
+                        if (this.cart[i] === id) {
+                            count++;
+                        }
+                    }
+                    return count;
+                },
+
+
 
 
 
