@@ -28,3 +28,33 @@
                 <button class="show-checkout" v-else-if="isCartEmpty()">View Cart ({{ cartItemCount }})</button>
                 <button class="show-checkout" v-else disabled>View Cart ({{ cartItemCount }})</button>
             </div>
+        </div>
+
+        <div class="show-lesson" v-if="showLessons">
+            <section class="sort-section">
+                <div class="sort">
+                    <h2>Apply Filters</h2>
+                    
+                    <span class="criteria">
+                        <input type="radio" name="sortingCriteria" id="sortBySubject" v-model="sortBy" :value="'subject'">
+                        <label for="sortBySubject" class="checkbox-text">By Subject</label>
+                    </span>
+                    <span class="criteria">
+                        <input type="radio" name="sortingCriteria" id="sortByLocation" v-model="sortBy" :value="'location'"> 
+                        <label for="sortByLocation" class="checkbox-text">By Location</label>
+                    </span>
+                    <span class="criteria">
+                        <input type="radio" name="sortingCriteria" id="sortByPrice" v-model="sortBy" :value="'price'">
+                        <label for="sortByPrice" class="checkbox-text"> By Price</label>
+                    </span>
+                    <span class="criteria">
+                        <input type="radio" name="sortingCriteria" id="sortByAvailability" v-model="sortBy" :value="'availability'">
+                        <label for="sortByAvailability" class="checkbox-text">By Availability</label>
+                    </span>
+                    
+                    <div class="order">
+                        <div class="criteria">
+                            <input type="checkbox" name="ascending" id="ascendingOrder" v-model="ascending">
+                            <label for="ascendingOrder" class="checkbox-text">Ascending Order</label>
+                        </div>
+                        <div class="criteria">
