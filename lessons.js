@@ -72,3 +72,12 @@ let lessons = [
         "description": "This is make up classes for the Geography lectures",
         "availability": 10
     },
+    {
+        "id": 1009,
+        "image": "images/Badminton.jpg",
+        "subject": "Badminton 101",
+        "price": 50.00,
+        "location": "Badminton Court, Sports Center",
+        "description": "Come for the basic tutoring on how to play badminton",
+        "availability": 10
+    },
