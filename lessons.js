@@ -63,3 +63,12 @@ let lessons = [
         "description": "This session is for people with little to no cooking skills to learn basic cooking eitquettes",
         "availability": 10
     },
+    {
+        "id": 1008,
+        "image": "images/Geography.jpg",
+        "subject": "GSC 314",
+        "price": 30.00,
+        "location": "Physics Lab",
+        "description": "This is make up classes for the Geography lectures",
+        "availability": 10
+    },
