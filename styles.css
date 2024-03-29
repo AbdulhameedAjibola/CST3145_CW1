@@ -119,3 +119,27 @@
     border: 3px solid black;
     border-radius: 8px;
 }
+.lesson-image{
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter:grayscale(100%);
+    transition: 1s, ease-in;
+}
+.lesson-image:hover{
+    filter: grayscale(0%);
+}
+.lesson-description h2{
+    margin-bottom: 10px;
+    color: wheat;
+    font-size: 2em;
+    font-weight: 700;
+}
+.price-stock p{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.price-stock span{
+    font-size: medium;
+}
