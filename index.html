@@ -102,4 +102,20 @@
                         <div class="item-image">
                             <img v-bind:src="lesson.image" class="cart-lesson-image" alt="lesson image">
                         </div>
+                        <h2>{{ lesson.subject }}</h2>
+                        <p>{{ lesson.description }}</p>
+                        <p>{{ lesson.location }}</p>
+                        <div class="price-stock">
+                            <p> DHS {{ lesson.price }}</p>
+                            <span>Available Stock: {{ lesson.availability - cartCount(lesson.id) }}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="delete-from-cart">
+                    <button class="remove-from-cart" v-on:click="removeFromCart(lessonID)">Remove from Cart</button>
+                </div>
+                
+            </div>
+        </div>
+
 
