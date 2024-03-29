@@ -96,3 +96,26 @@
 .order{
     margin-top: 50px;
 }
+.order{
+    margin-top: 50px;
+}
+.main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    
+}
+.lesson{
+    margin: 5px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
