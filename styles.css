@@ -25,3 +25,74 @@
 .search{
     display: flex;
 }
+.search-bar{
+    width: 350px;
+    padding: 6px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 8px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0;
+    border: 1px black solid;
+}
+.search-button{
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px black solid;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    background-color: wheat;
+    color: gray;
+    font-weight: 600;
+}
+.show-checkout{
+    background-color: wheat;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16;
+    font-weight: 700;
+    color: grey;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.show-checkout:hover{
+    box-shadow:4px 4px 4px rgba(0, 0, 0, 0.237);
+}
+.show-lesson{
+    display: flex;
+}
+.sort-section{
+    margin-top: 150px;
+    width: 300px;
+    padding-left: 50px;
+}
+.sort h2{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 2em;
+    color: wheat;
+}
+.criteria{
+    padding: 10px;
+    font-size: 22px;
+    display: block;
+}
+.criteria input[type="checkbox"]{
+    transform: scale(1.5);
+    padding: 10px;
+    
+    accent-color: wheat;
+}
+.checkbox-text{
+    display: inline;
+    font-size:22px;
+    font-weight:50;
+}
+.order{
+    margin-top: 50px;
+}
