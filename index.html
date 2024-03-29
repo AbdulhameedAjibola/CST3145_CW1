@@ -69,3 +69,37 @@
                 <div class="lessons" v-for="lesson in searchLessons">
                     <div class="lesson">
                         <div class="image-holder">
+                            <img v-bind:src="lesson.image" class="lesson-image" alt="lesson image">
+                        </div>
+                        <div class="lesson-description">
+                            <h2>{{ lesson.subject }}</h2>
+                            <p>{{ lesson.description }}</p>
+                            <p>Location: {{ lesson.location }}</p>
+                            <div class="price-stock">
+                                <p> DHS {{ lesson.price }}</p>
+                                <span>Available Stock: {{ lesson.availability - cartCount(lesson.id) }}</span>
+                            </div>
+                            <button class="add-to-cart-button" v-on:click="addToCart(lesson)" :disabled="!canAddToCart(lesson)">Add to Cart</button>
+                            <div class="message">
+                                <span v-if="lesson.availability === cartCount(lesson.id)">Lesson Out of Stock</span>
+                                <span v-else-if="lesson.availability - cartCount(lesson.id)">
+                                    Hurry now!. {{ lesson.availability - cartCount(lesson.id) }} Spaces Left!
+                                </span>
+                                <span v-else>Seats Available! Buy Now!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="showCheckout" v-else>
+            <h2 class="title">{{ checkout }}</h2>
+            <div class="cart-items" >
+                <div class="cart-item" v-for="lessonID in cartSet" :key="lessonID">
+                    
+                    <div v-if="lesson = lessons.find(lesson => lesson.id === lessonID)" class="item-data">
+                        <div class="item-image">
+                            <img v-bind:src="lesson.image" class="cart-lesson-image" alt="lesson image">
+                        </div>
+
