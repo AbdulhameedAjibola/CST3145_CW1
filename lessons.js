@@ -18,3 +18,13 @@ let lessons = [
         "availability": 10
         
     },
+    {
+        "id": 1003,
+        "image": "images/Basketball.jpg",
+        "subject": "Basketball 101",
+        "price": 45.00,
+        "location": "Sports Centre GK17",
+        "description": "This is an extra lesson session for students who wish to improve their Basketball playing skills",
+        "availability": 10
+    },
+    
