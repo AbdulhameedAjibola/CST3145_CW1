@@ -58,3 +58,14 @@
                             <label for="ascendingOrder" class="checkbox-text">Ascending Order</label>
                         </div>
                         <div class="criteria">
+                            <input type="checkbox" name="descending" id="descendingOrder" v-model="descending">
+                            <label for="descendingOrder" class="checkbox-text">Descending Order</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="main">
+                <div class="lessons" v-for="lesson in searchLessons">
+                    <div class="lesson">
+                        <div class="image-holder">
