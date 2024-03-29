@@ -143,3 +143,24 @@
 .price-stock span{
     font-size: medium;
 }
+.add-to-cart-button{
+    background-color: wheat;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16;
+    font-weight: 700;
+    color: grey;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 8px;
+}
+.add-to-cart-button:hover{
+    transform: scale(1.08);
+}
+.message{
+    font-size: small;
+    color: red;
+}
