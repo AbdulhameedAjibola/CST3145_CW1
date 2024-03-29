@@ -27,4 +27,12 @@ let lessons = [
         "description": "This is an extra lesson session for students who wish to improve their Basketball playing skills",
         "availability": 10
     },
-    
+    {
+        "id": 1004,
+        "image": "images/Volleyball.jpg",
+        "subject": "Volleyball 101",
+        "price": 15.00,
+        "location": "Outdoor Volleyball Coutt",
+        "description": "Cone join us, in a fun filled learning environment and improve your volleyball skills!",
+        "availability": 10
+    },
