@@ -81,3 +81,13 @@ let lessons = [
         "description": "Come for the basic tutoring on how to play badminton",
         "availability": 10
     },
+    {
+        "id": 1010,
+        "image": "images/Rap.jpg",
+        "subject": "Rap 101",
+        "price": 14.99,
+        "location": "Music Lab",
+        "description": "This is for all Music Fanatics, come for tutoring  in Rap music.",
+        "availability": 10
+    }
+]
