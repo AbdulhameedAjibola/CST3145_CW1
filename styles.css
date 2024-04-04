@@ -236,27 +236,3 @@
     text-align: center;
     color: wheat;
 }
-.details-input input{
-    padding: 10px;
-    width: 300px;
-    margin: 8px;
-    margin-bottom: 0;
-}
-.place-order{
-    background-color: wheat;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    color: grey;
-    border: 1px solid black;
-    border-radius: 8px;
-    transition: 0.5s;
-    cursor: pointer;
-    margin: 15px;
-}
-
-.place-order:hover{
-    transform: scale(1.1);
-}
