@@ -116,20 +116,21 @@
                 </div>
                 
             </div>
-        </div>
-        <div class="checkout-details">
-            <div class="details-input">
-                <h2 class="order-title">Please enter Order Details</h2>
-                <label for="Name">Customer Name</label> <br>
-                <input type="text" name="" id="" v-model="customerName"> <br>
-                <span class="message" v-if="!isValidText()">Please enter your name (Alphabets Only) and not more than 15 characters.</span><br>
-                <label for="Number">Phone Number</label> <br>
-                <input type="number" name="" id="" v-model="customerNumber"> <br>
-                <span class="message" v-if="!isValidNumber()">Please enter your complete Phone Number (Digits Only)</span>
+            <div class="checkout-details">
+                <div class="details-input">
+                    <h2 class="order-title">Please enter Order Details</h2>
+                    <label for="Name">Customer Name</label> <br>
+                    <input type="text" name="" id="" v-model="customerName"> <br>
+                    <span class="message" v-if="!isValidText()">Please enter your name (Alphabets Only) and not more than 15 characters.</span><br>
+                    <label for="Number">Phone Number</label> <br>
+                    <input type="number" name="" id="" v-model="customerNumber"> <br>
+                    <span class="message" v-if="!isValidNumber()">Please enter your complete Phone Number (Digits Only)</span>
+                </div>
+                <button  v-if="showCheckoutButton()" v-on:click="checkOut" class="place-order">Buy Now!</button>
+                <button disabled v-else class="place-order">Buy Now!</button>
             </div>
-            <button  v-if="showCheckoutButton()" v-on:click="checkOut" class="place-order">Buy Now!</button>
-            <button disabled v-else class="place-order">Buy Now!</button>
         </div>
+       
     </div>
 </div>
 
